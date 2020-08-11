@@ -1,4 +1,4 @@
-package ExerciciosPrimeiraAula;
+package exerciciosprimeiraaulavetores;
 
 import java.util.Random;
 

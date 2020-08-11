@@ -1,4 +1,4 @@
-package ExerciciosPrimeiraAula;
+package exerciciosprimeiraaulavetores;
 
 public class Exercicio3ConsultaDeTelefones {
     
