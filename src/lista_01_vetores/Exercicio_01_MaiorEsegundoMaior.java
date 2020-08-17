@@ -1,8 +1,8 @@
-package exerciciosprimeiraaulavetores;
+package lista_01_vetores;
 
 import java.util.Random;
 
-public class Exercicio1MaiorEsegundoMaior {
+public class Exercicio_01_MaiorEsegundoMaior {
 
     public static void main(String[] args) {
         Random elementos = new Random();

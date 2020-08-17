@@ -1,16 +1,14 @@
+package exercicios;
 
 
-public class CalcularValoresEarmazenarEmArray {
+
+public class InicializandoUmArray {
 
     public static void main(String[] args) {
         
-        final int ARRAY_LENGTH = 10;
-        int array[] = new int [ARRAY_LENGTH];
+        //inicializando um array diretamente sem o new
+        int array[] = {32,27,64,18,95,14,90,70,60,50};
         
-        for (int cont = 0; cont < array.length; cont++) {
-            array[cont] = 2 + 2* cont;
-            
-        }
         System.out.printf("%s%8s\n", "Index", "Valor");
         
         for (int cont = 0; cont < array.length; cont++) {

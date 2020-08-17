@@ -1,7 +1,7 @@
 
-package exerciciosprimeiraaulavetores;
+package lista_01_vetores;
 
-public class Exercicio4ordenacao {
+public class Exercicio_04_ordenacao {
     // solução do professor
     public static void main(String[] args) {
         
@@ -21,7 +21,7 @@ public class Exercicio4ordenacao {
         if(c<b){
             int aux=b;b=c;c=aux;
         }
-        System.out.print("Números ordenados:  " + a +b+ c);
+        System.out.printf("%d %d %d\n", a , b,  c );
     }
             
     

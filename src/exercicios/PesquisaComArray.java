@@ -1,3 +1,5 @@
+package exercicios;
+
 
 
 import java.util.Random;
@@ -8,14 +10,15 @@ public class PesquisaComArray {
         
         Random valor = new Random();
         int nota = 0;
-        int respostas[];
-        respostas = new int[40];
+        int respostas[] = new int [40];
+        int frequencia[] = new int[11];
 
         System.out.printf("%s%11s\n", "Resposta", "Avaliação");
         for (int cont = 0; cont < respostas.length; cont++) {
 
             nota = valor.nextInt(10) + 1;
             respostas[cont] = nota;
+            
             if (respostas[cont] == 1) {
                 System.out.printf("%8d%11s\n", respostas[cont], "Horrível");
             }
@@ -25,7 +28,6 @@ public class PesquisaComArray {
         }
         System.out.println("********************* Solução proposta pelo livro *********************");
         String classificacao = "";
-        int frequencia[] = new int[11];
         for (int cont = 0; cont < respostas.length; cont++) {
             frequencia[respostas[cont]]++;
 

@@ -1,6 +1,6 @@
-package exerciciosprimeiraaulavetores;
+package lista_01_vetores;
 
-public class Exercicio3ConsultaDeTelefones {
+public class Exercicio_03_ConsultaDeTelefones {
     
    public String nome;
    public String telefone;
