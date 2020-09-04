@@ -5,38 +5,34 @@ import java.util.Random;
 public class Exercicio_02_TransportarnumerosPrimos {
 
     public static void main(String[] args) {
+        Random valor = new Random();
 
-        int[] vetor = new int[21];
+        int[] vetor = new int[10];
         int[] vetorPrimo = new int[vetor.length];
-        int pos = 0;
-        int totalDivisores = 0;
-
-        for (int i = 1; i < vetor.length; i++) {
-            vetor[i] = i;
-
-            for (int j = 2; j < vetor[i]; j++) {
-                if (vetor[i] % j == 0) {
-                    totalDivisores++;
-                    if (totalDivisores == 2) {
-                        pos++;
-                        vetorPrimo[pos] = vetor[i];
-                        break;
-                    }
-                }
+        int i;
+        for (i = 0; i < vetor.length; i++) {
+            vetor[i] = valor.nextInt(100) + 1;
+            System.out.println("Posição["+i+"] -> " +  vetor[i]);
+        }
+        boolean ePrimo = true;
+        double limite = Math.sqrt(vetor[i]);
+         int j= 2;
+        while (j <=limite && ePrimo){
+            if (vetor[i] % j == 0) {
+             ePrimo = false;   
             }
+            j++;
+        }
+        if (ePrimo) {
+            for (int k = 0; k < vetor.length; k++) {
+                System.out.print(vetor[i] + " ");
+            }
+            
+           // System.out.println(vetor[i] + " é primo");
+        }else {
+            //System.out.println(numero + " não é primo");
+            
         }
 
-        System.out.println("Elementos do vetor: ");
-        for (int i = 1; i < vetor.length; i++) {
-            System.out.printf("%d ", vetor[i]);
-        }
-        System.out.println("");
-
-        System.out.println("Vetor com elementos primos transportados");
-        for (int i = 0; i < pos; i++) {
-            System.out.printf("%d ", vetorPrimo[i]);
-        }
-        System.out.println("");
     }
-
 }
