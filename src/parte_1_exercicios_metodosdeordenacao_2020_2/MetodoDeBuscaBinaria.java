@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package metodosdeordenacao;
+package parte_1_exercicios_metodosdeordenacao_2020_2;
 
 import java.util.Random;
 import javax.swing.JOptionPane;

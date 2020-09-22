@@ -1,4 +1,4 @@
-package exercicios;
+package exercicios_casos_de_estudos;
 
 
 
